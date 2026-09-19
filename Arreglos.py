@@ -37,4 +37,4 @@ print(frutas)
 arreglo=[]
 n = int (input("Ingresa el tamaño del arreglo"))
 
-arreglo.append
+arreglo.append(n)
