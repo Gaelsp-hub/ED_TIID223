@@ -1,0 +1,98 @@
+numeros = [10, 20, 30, 40, 50]
+
+print(numeros[2])
+
+#--------------------------------
+
+numeros = [10, 20, 30, 40, 50]
+
+numeros[2] = 100
+
+print(numeros)
+#--------------------------------
+
+numeros = [10, 20, 30, 40, 50]
+numeros.append(60)
+print(numeros)
+#--------------------------------
+
+numeros = [10, 20, 30, 40, 50]
+numeros.append(60)
+numeros.append(70)
+print(numeros)
+#--------------------------------
+numeros = [10, 20, 30, 40, 50]
+numeros.append([60, 70])
+print(numeros[5])
+# Para imprimir únicamente el 60:
+print(numeros[5][0])
+#--------------------------------
+numeros = [10, 20, 30, 40]
+numeros.insert(2, 25)
+print(numeros)
+#--------------------------------
+numeros = [10, 20, 30, 40]
+numeros = numeros + [50]
+print(numeros)
+#-------------------------------
+numeros = [10, 20, 30, 40]
+numeros.insert(2, 25)
+print(numeros)
+#-------------------------------
+numeros = [10, 20, 30, 40]
+numeros = numeros + [50]
+print(numeros)
+#-------------------------------
+numeros = [10, 20, 30, 40]
+numeros = numeros + [50, 60, 70]
+print(numeros)
+#-------------------------------
+numeros = [10, 20, 30]
+numeros[len(numeros):] = [40]
+print(numeros)
+#-------------------------------
+# Ejercicio 1: Lista de calificaciones
+calificaciones = [70, 85, 90, 65]
+
+# 1. Agrega la calificación 95 al final
+calificaciones.append(95)
+
+# 2. Agrega la calificación 80 entre 85 y 90 (índice 2)
+calificaciones.insert(2, 80)
+
+# 3. Imprime el arreglo completo
+print("Calificaciones finales:", calificaciones)
+#-------------------------------
+# Ejercicio 2: Agregar varios elementos
+colores = ["Azul", "Amarillo", "Rosa"]
+
+# Agregar los colores como elementos independientes
+colores.extend(["Verde", "Morado", "Rojo"])
+
+# 1. Imprime el arreglo completo
+print("Lista completa de colores:", colores)
+
+# 2. Imprimir color específico (por ejemplo 'Negro' si estuviera o agregándolo):
+colores.append("Negro")
+print("Elemento individual:", colores[-1])
+
+#----------------------------------------------
+# Ejercicio 3: Reto de posiciones
+numeros = [10, 20, 30, 40]
+
+# Operaciones para obtener [10, 20, 95, 30, 40, 50, 67]
+numeros.insert(2, 95)
+numeros.extend([50, 67])
+
+# 1. Imprime el arreglo completo
+print("Arreglo completo:", numeros)
+
+# 2. Imprime el número 95
+print("Número 95:", numeros[2])
+
+# 3. Imprime el número 67
+print("Número 67:", numeros[6])
+
+# 4. Indica qué posición ocupa cada uno
+print(f"El número 95 ocupa el índice {numeros.index(95)} (Posición {numeros.index(95) + 1})")
+print(f"El número 67 ocupa el índice {numeros.index(67)} (Posición {numeros.index(67) + 1})")
